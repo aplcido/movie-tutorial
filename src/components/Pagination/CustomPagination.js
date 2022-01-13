@@ -1,7 +1,7 @@
 import React from 'react'
 import { Pagination } from '@mui/material'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { purple, deepOrange, grey } from '@mui/material/colors';
+import { deepOrange, grey } from '@mui/material/colors';
 
 const darkTheme=createTheme({
     palette: {
