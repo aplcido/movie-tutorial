@@ -34,7 +34,7 @@ export default function SimpleBottomNavigation() {
         navigate("/series")
       else if(value===3)
         navigate("/search")
-      else if(value===3)
+      else if(value===4)
         navigate("/watched")
       
   }, [value,navigate])

@@ -1,6 +1,7 @@
 import { Container } from "@mui/material";
 import { BrowserRouter } from "react-router-dom";
 import "./App.css";
+import "./lib/font-awesome/css/all.min.css";
 import Header from "./components/Header/Header";
 import SimpleBottomNavigation from "./components/MainNav";
 import { Routes, Route } from "react-router-dom";
@@ -25,7 +26,7 @@ function App() {
      <Route path='/movies' element={<Movies />} />
      <Route path='/series' element={<Series />} />
      <Route path='/search' element={<Search />} />
-     {/* <Route path='/watched' element={<Watched />} /> */}
+     <Route path='/watched' element={<Watched />} />
    </Routes>
    </Container>
   </div>;

@@ -18,9 +18,10 @@ const SingleContent = ({
     let storedMovie = watched.find(o => o.id === movie.id);
 
     const watchedDisabled = storedMovie ? true : false;
-    const buttonClass = watchedDisabled ? "btndisabled" : "btn";
+    const buttonClass = watchedDisabled ? "btndisabled" : "btn2";
     
     return (
+      
      <div className="media">
         <Badge
           badgeContent={vote_average}
@@ -40,6 +41,7 @@ const SingleContent = ({
         <button disabled={watchedDisabled} className={buttonClass} onClick={() => addMovieToWatched(movie)} >Add to Watched</button>
        
         </div>
+        
     );
   };
   

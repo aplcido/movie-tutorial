@@ -50,6 +50,7 @@ const Movies = () => {
               date={c.first_air_date || c.release_date}
               media_type="movie"
               vote_average={c.vote_average}
+              movie={c}
             />
           ))}
       </div>
