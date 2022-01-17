@@ -6,9 +6,9 @@ export const WatchedControls = ({movie,type}) => {
     return (
         <div className="inner-card-controls">
             <>
-            <button className="ctrl-btn">
+            {/* <button className="ctrl-btn">
             <i className="fa-fw far fa-eye"></i>
-            </button>
+            </button> */}
             <button className="ctrl-btn" onClick={() => removeMovieFromWatched(movie.id)}>
                 <i className="fa-fw fa fa-times"></i>
             </button>

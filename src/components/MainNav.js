@@ -9,6 +9,7 @@ import MovieIcon from '@mui/icons-material/Movie';
 import TvIcon from '@mui/icons-material/Tv';
 import SearchIcon from '@mui/icons-material/Search';
 import DevicesIcon from '@mui/icons-material/Devices';
+import DescriptionIcon from '@mui/icons-material/Description';
 
 const useStyles = makeStyles({
     root: {
@@ -36,6 +37,8 @@ export default function SimpleBottomNavigation() {
         navigate("/search")
       else if(value===4)
         navigate("/watched")
+      else if(value===5)
+        navigate("/notes")
       
   }, [value,navigate])
 
@@ -54,6 +57,7 @@ export default function SimpleBottomNavigation() {
         <BottomNavigationAction style={{ color: "white" }} label="TV Series" icon={<TvIcon />} />
         <BottomNavigationAction style={{ color: "white" }} label="Search" icon={<SearchIcon />} />
         <BottomNavigationAction style={{ color: "white" }} label="Watched" icon={<DevicesIcon />} />
+        <BottomNavigationAction style={{ color: "white" }} label="Notes" icon={<DescriptionIcon />} />
       </BottomNavigation>
     </Box>
   );

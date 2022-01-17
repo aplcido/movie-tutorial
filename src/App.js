@@ -9,7 +9,8 @@ import Trending from "./Pages/Trending/Trending";
 import Movies from "./Pages/Movies/Movies";
 import Search from "./Pages/Search/Search";
 import Series from "./Pages/Series/Series";
-import Watched from "./Pages/Watched/Watched"
+import Watched from "./Pages/Watched/Watched";
+import Notes from "./Pages/Notes/Notes";
 import { GlobalProvider } from "./components/Context/GlobalState";
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
      <Route path='/series' element={<Series />} />
      <Route path='/search' element={<Search />} />
      <Route path='/watched' element={<Watched />} />
+     <Route path='/notes' element={<Notes />} />
    </Routes>
    </Container>
   </div>;
